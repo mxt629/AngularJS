@@ -19,7 +19,7 @@
             var i, c, txt = "";
             for (i=0; i <x.length; i++) {
                 c = x[i];
-                if (i % 2 == 0) {
+                if (i % 3 == 0) {
                     c = c.toUpperCase();
                 }
                 txt += c;
@@ -29,11 +29,11 @@
     });
     app.controller('namesCtrl',function ($scope){
         $scope.names = [
-            'Jani',
-            'Carl',
-            'Margareth',
-            'Hege',
-            'Joe',
+            'jani',
+            'carl',
+            'margareth',
+            'hege',
+            'joe',
             'Gustav',
             'Birgit',
             'Mary',

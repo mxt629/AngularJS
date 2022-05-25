@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <p>Try writing in the input field:</p>
+    <form name="myForm">
+        <input type="text" name="myInput" ng-model="myInput" required>
+    </form>
+    <p>The input's valid stata is:</p>
+    <h1>{{myForm.myInput.$valid}}</h1>
+
+</body>
+</html>
